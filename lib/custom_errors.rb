@@ -5,6 +5,9 @@ class Person
     @name = name
   end
 
+  class PartnerError < StandardError
+  end
+
   def get_married(person)
     self.partner = person
     person.partner = self
